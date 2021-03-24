@@ -19,7 +19,7 @@ class Staff(models.Model):
 
 
 class Mail(models.Model):
-    nomer = models.AutoField(("Исходяший номер"),primary_key=True)
+    nomer = models.AutoField(("Исходяший номер"))
     date_mail = models.DateField("Дата",null=True)
     sent_to = models.ForeignKey(Org,on_delete=models.CASCADE,null=True)
    # sent_to = models.CharField(("Кому"), max_length=50)
